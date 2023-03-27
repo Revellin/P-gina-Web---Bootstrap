@@ -21,7 +21,7 @@ class Pessoa{
 
    //Método GET
    public function getTelefone (){
-    return $this->getTelefone;
+    return $this->telefone;
   }
   
   //Metodo SET
@@ -31,7 +31,7 @@ class Pessoa{
 
   //Método GET
   public function getOrigem (){
-    return $this->getOrigem;
+    return $this->origem;
   }
   
   //Metodo SET
@@ -41,12 +41,12 @@ class Pessoa{
 
   //Método GET
   public function getObservação (){
-    return $this->getObservação;
+    return $this->observação;
   }
   
   //Metodo SET
   public function setObservação ($observação) {
-      $this -> observaçãp= $observação;
+      $this -> observação= $observação;
   }
 }
 
