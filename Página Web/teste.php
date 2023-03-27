@@ -1,6 +1,6 @@
 <?php
 
-require_once("pessoa.class.php");
+require_once("pessoa.php");
 
 class Teste {
     private $pessoa;
@@ -8,40 +8,16 @@ class Teste {
     public function __construct(){
     $pessoa = new Pessoa();
     $pessoa->setNome($_POST['nome']);
-    echo $pessoa->getNome();
-}
-^}
+    echo "Nome é: " . $pessoa->getNome() . "<br>";
 
-class Teste {
-    private $pessoa;
-
-    public function __construct(){
-    $pessoa = new Pessoa();
     $pessoa->setTelefone($_POST['telefone']);
-    echo $pessoa->getTelefone();
-}
-}
+    echo "Telefone é: " . $pessoa->getTelefone() . "<br>";
 
-class Teste {
-    private $pessoa;
-
-    public function __construct(){
-    $pessoa = new Pessoa();
     $pessoa->setOrigem($_POST['origem']);
-    echo $pessoa->getOrigem();
-}
-}
-
-class Teste {
-    private $pessoa;
-
-    public function __construct(){
-    $pessoa = new Pessoa();
+    echo "Origem é: " . $pessoa->getOrigem() . "<br>";
     $pessoa->setObservação($_POST['observação']);
-    echo $pessoa->getObservação();
+    echo "Observação é: " . $pessoa->getObservação() . "<br>";
 }
-
-
 }new Teste ();
 
 ?>
